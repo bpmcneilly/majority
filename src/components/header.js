@@ -105,9 +105,9 @@ class Header extends Component {
                       {!this.props.menuOpen && (
                         <Hamburger isInStickyHeader onClick={this.toggleMenu} />
                       )}
-                      <h2>
+                      <h1>
                         <Link to="/">MAJORITY</Link>
-                      </h2>
+                      </h1>
                     </div>
                     <div className="sticky-header__right">
                       <SocialMedia />
