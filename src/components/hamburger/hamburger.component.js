@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import styles from './hamburger.module.scss'
 
 const Hamburger = ({ isInStickyHeader, onClick }) => (
-  <button
+  <button aria-hasppoup="menu" aria-expanded="false" aria-controls="main-menu"
     className={classNames(styles.hamburger, 'hamburger', {
       [styles.inStickyHeader]: isInStickyHeader,
     })}
