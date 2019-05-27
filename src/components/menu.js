@@ -15,9 +15,9 @@ class Menu extends Component {
         })}
       >
         <div className={styles.closeWrapper}>
-          <div className={styles.close} onClick={this.props.onClose}>
+          <button className={styles.close} onClick={this.props.onClose}>
             &times;
-          </div>
+          </button>
         </div>
         <Logo />
         <ul className={styles.menuItems}>
