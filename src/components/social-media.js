@@ -9,6 +9,7 @@ const SocialMedia = () => (
       href="https://twitter.com/eastbaymajority"
       target="_blank"
       rel="noopener noreferrer"
+      title="Opens in a New Tab"
     >
       <img src={twitterLogo} alt="Twitter" className="sm__twitter" />
     </a>
@@ -16,6 +17,7 @@ const SocialMedia = () => (
       href="https://www.facebook.com/EastBayMajority"
       target="_blank"
       rel="noopener noreferrer"
+      title="Opens in a New Tab"
     >
       <img src={facebookLogo} alt="Facebook" className="sm__facebook" />
     </a>
