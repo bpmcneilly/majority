@@ -9,7 +9,7 @@ import ebdsaLogo from '../img/ebdsa-logo@2x.png'
 class Menu extends Component {
   render() {
     return (
-      <div
+      <div id="main-menu" role="dialog" aria-modal="true" aria-label="Main Menu"
         className={classNames(styles.menu, {
           [styles.inDrawer]: this.props.inDrawer,
         })}
