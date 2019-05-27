@@ -129,7 +129,7 @@ class Header extends Component {
                 </div>
               )}
               <SocialMedia />
-              <Logo />
+              <h1><Logo /></h1>
               <div className="tagline">
                 <p>News for the East Bay's diverse, working-class majority.</p>
                 <p>
