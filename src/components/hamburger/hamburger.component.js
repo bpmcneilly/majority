@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import styles from './hamburger.module.scss'
 
 const Hamburger = ({ isInStickyHeader, onClick }) => (
-  <div
+  <button
     className={classNames(styles.hamburger, 'hamburger', {
       [styles.inStickyHeader]: isInStickyHeader,
     })}
@@ -12,7 +12,7 @@ const Hamburger = ({ isInStickyHeader, onClick }) => (
     <div className={styles.line1} />
     <div className={styles.line2} />
     <div className={styles.line3} />
-  </div>
+  </button>
 )
 
 export default Hamburger
