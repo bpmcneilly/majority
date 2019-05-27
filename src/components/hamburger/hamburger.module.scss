@@ -6,11 +6,13 @@ $hamburger-item-height: ($hamburger-height - $hamburger-item-margin * 2) / 3;
 .hamburger {
   width: $hamburger-width;
   height: $hamburger-height;
+  padding: 0px;
+  border: 0px;
+  background-color: inherit;
   position: absolute;
   // top: ($sticky-header-height -$hamburger-height) / 2;
   // top: 34px;
   left: 20px;
-  cursor: pointer;
 
   div {
     background: white;
