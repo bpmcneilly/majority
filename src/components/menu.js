@@ -20,14 +20,14 @@ class Menu extends Component {
           </div>
         </div>
         <Logo />
-        <div className={styles.menuItems}>
-          <div className={styles.menuItem}>
+        <ul className={styles.menuItems}>
+          <li className={styles.menuItem}>
             <Link to="/">Latest News</Link>
-          </div>
-          <div className={styles.menuItem}>
+          </li>
+          <li className={styles.menuItem}>
             <Link to="/introducing-majority/">About Majority</Link>
-          </div>
-          <div className={styles.menuItem}>
+          </li>
+          <li className={styles.menuItem}>
             <a
               href="http://eastbaydsa.org"
               target="_blank"
@@ -35,8 +35,8 @@ class Menu extends Component {
             >
               East Bay DSA
             </a>
-          </div>
-        </div>
+          </li>
+        </ul>
         <img src={ebdsaLogo} alt="East Bay DSA" className={styles.ebdsaLogo} />
         {/* <NewsletterSignup /> */}
       </div>
