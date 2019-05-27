@@ -18,6 +18,7 @@ $hamburger-item-height: ($hamburger-height - $hamburger-item-margin * 2) / 3;
     background: white;
     height: $hamburger-item-height;
     border-radius: $hamburger-item-height / 2;
+    border: 1px solid white;
     position: absolute;
     width: 100%;
   }
