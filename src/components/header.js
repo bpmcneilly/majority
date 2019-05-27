@@ -138,7 +138,7 @@ class Header extends Component {
                 </p>
                 <img src={ebdsaLogo} alt="East Bay DSA" />
               </div>
-              <nav className="navbar">
+              <nav className="navbar" role="none">
                 {/* <div className="navbar-start">
               {data.allWordpressPage.edges.map(edge => (
                 <Link
