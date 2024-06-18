@@ -1,7 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
+import PropTypes from 'prop-types'
+import React from 'react'
+import Helmet from 'react-helmet'
 // import { graphql, Link } from 'gatsby'
 import { graphql } from 'gatsby'
 import he from 'he'
@@ -141,14 +141,6 @@ const BlogPost = ({ data }) => {
         {image && (
           <meta property="og:image:width" content={fluid.presentationWidth} />
         )}
-
-        <style>{`
-          @media (max-width: ${fluid.presentationWidth}px) {
-            figcaption {
-              margin: 0 20px;
-            }
-          }
-        `}</style>
       </Helmet>
       <BlogPostTemplate
         content={post.content}
@@ -158,8 +150,8 @@ const BlogPost = ({ data }) => {
         date={post.date}
         author={post.author}
         img={fluid}
-        imgAlt={image.alt_text}
-        imgCaption={image.caption}
+        imgAlt={image && image.alt_text}
+        imgCaption={image && image.caption}
       />
     </Layout>
   )

@@ -61,7 +61,7 @@ body {
     }
   }
 
-  p {
+  p, li {
     font-size: 18px;
     margin: 0 20px 0.75rem;
     line-height: 1.45em;
@@ -114,6 +114,15 @@ body {
 
   .date {
     color: $light-text-color;
+  }
+
+  figure {
+    margin: 0 20px 0.75em;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -188,3 +197,36 @@ body {
     color: $text-color;
   }
 }
+
+/* purgecss start ignore */
+.ahs-strike-figure {
+  @include bp(tablet) {
+    width: 50%;
+
+    &--right {
+      float: right;
+    }
+
+    &--left {
+      float: left;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+hr {
+  margin: 30px 20px;
+}
+
+.clearfix {
+  &::after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
+/* purgecss end ignore */
